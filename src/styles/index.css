@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    background-color: #dfdfdf;
+    padding: 21px 36px;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+strong,
+br {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #fff;
+    padding: 21px 0;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin: 32px 0;
+}
+
+nav ul {
+    width: 225px;
+}
+
+nav ul li:not(:first-child) {
+    margin: 12px 0;
+}
+
+nav ul li {
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 500;
+    margin-left: 16px !important;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    background-color: #e1e1e1;
+    color: #3636ed;
+    padding: 12px 4px;
+    border-radius: 2px;
+    position: relative;
+    margin-left: 16px;
+}
+
+nav ul li.active .active-bar {
+    background-color: blue;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -16px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-left: 16px;
+}
+
+.popup {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    background-color: #1b1b1b;
+    width: 400px;
+    height: 85px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0 12px;
+}
+
+.popup-left-area {
+    display: flex;
+    align-items: center;
+}
+
+.popup-icon {
+    width: 25px;
+    margin-right: 16px;
+}
+
+.popup-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.popup-gotobasket {
+    font-size: 14px;
+    color: #7272ff;
+    font-weight: 500;
+}
+
+.popup-close-icon {
+    width: 20px;
+    cursor: pointer;
+}
