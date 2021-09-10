@@ -82,18 +82,19 @@ export class UI {
 
                 const { shippingFee } = product.params;
 
+                const feeIsFreeElement = document.createElement("div");
+                feeIsFreeElement.className = "product-fee-container";
+
+                const cargoElement = document.createElement("img");
+                cargoElement.className = "product-fee-truck";
+
                 if (shippingFee === "FREE") {
-                    const feeIsFreeElement = document.createElement("div");
-                    feeIsFreeElement.className = "product-fee-container";
                     feeIsFreeElement.innerHTML = "Ücretsiz Kargo";
-
-                    const cargoElement = document.createElement("img");
                     cargoElement.src = "/src/assets/img/cargo-truck.png";
-                    cargoElement.className = "product-fee-truck";
-
-                    feeIsFreeElement.appendChild(cargoElement);
-                    productContainerElement.appendChild(feeIsFreeElement);
                 }
+
+                feeIsFreeElement.appendChild(cargoElement);
+                productContainerElement.appendChild(feeIsFreeElement);
 
                 const addToCartElement = document.createElement("div");
                 addToCartElement.className = "product-add-to-cart";
@@ -142,11 +143,13 @@ export class UI {
         } else {
             const productContainerCount =
                 document.querySelectorAll(".product-container").length;
+            const { outerWidth } = window;
+            const responseWidth = outerWidth < 800 ? 300 : 800;
 
             if (
                 productContainerCount *
                 (productConfig.width + productConfig.marginLeft) -
-                800 >
+                responseWidth >
                 -prevLeft
             ) {
                 this.slideLeftValue -= productConfig.width + productConfig.marginLeft;

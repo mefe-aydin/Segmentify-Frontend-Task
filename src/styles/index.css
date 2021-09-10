@@ -153,3 +153,54 @@ nav ul li.active .active-bar {
     width: 20px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+    .title {
+        font-size: 21px;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .content {
+        display: block;
+        margin: 0;
+    }
+    nav {
+        margin-bottom: 21px;
+    }
+    nav ul {
+        display: flex;
+        width: 100%;
+        overflow: auto;
+    }
+    nav ul::-webkit-scrollbar {
+        display: none;
+    }
+    nav ul li {
+        border-bottom: 3px solid #cecece;
+        white-space: nowrap;
+        margin-left: 0 !important;
+        padding: 0 12px;
+    }
+    nav ul li:not(:first-child) {
+        margin: 0;
+    }
+    nav ul li.active {
+        background-color: #fff;
+        color: #1b1b1b;
+        border-bottom: 3px solid blue;
+        padding: 0 12px;
+    }
+    nav ul li.active .active-bar {
+        display: none;
+    }
+    .popup {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        border-radius: 0;
+    }
+}

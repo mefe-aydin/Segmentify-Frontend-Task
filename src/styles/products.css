@@ -65,6 +65,7 @@
     font-weight: bold;
     color: #616161;
     margin-left: 2px;
+    height: 26px;
 }
 
 .product-fee-container .product-fee-truck {
@@ -87,7 +88,7 @@
 .pagination {
     background-color: #fff;
     border: 1px solid #9f9f9f;
-    border-radius: calc(60px/2);
+    border-radius: calc(60px / 2);
     color: #1b1b1b;
     width: 60px;
     height: 60px;
@@ -112,4 +113,22 @@
     top: 25%;
     padding-right: 8px;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+    .products-container {
+        width: 100vw;
+    }
+    .slider-wrapper {
+        overflow: auto;
+    }
+    .slider-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    .next {
+        display: none;
+    }
+    .prev {
+        display: none;
+    }
 }
