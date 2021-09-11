@@ -13,3 +13,6 @@ In the project directory, you can run:
 
 
 Open [http://localhost:5005](http://localhost:5005) to view it in the browser.
+
+
+You can see at this url as live: [https://segmentify-task.herokuapp.com/](https://segmentify-task.herokuapp.com/)
