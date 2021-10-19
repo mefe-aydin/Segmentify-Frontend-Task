@@ -12,7 +12,7 @@ In the project directory, you can run:
 ### `yarn start or npm start`
 
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5005](http://localhost:5005) to view it in the browser.
 
 
-You can see at this url as live: [https://tesodev-case.herokuapp.com/](https://tesodev-case.herokuapp.com/)
+You can see at this url as live: [https://segmentify-task.herokuapp.com/](https://segmentify-task.herokuapp.com/)
